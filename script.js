@@ -1,42 +1,51 @@
-$(function() {
-  //All JS goes within these brackets  
-  
-  $("#age-submit").click(function(){
-    
-    //select the box with id of age
-    //get the value from that box
-    var ageString = $("#age").val();
+body {
+  background-color: #ffd1dc;
+}
 
-    //convert string to number
-    var age = parseInt(ageString);
+.container {
+  width: 600px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
 
-    if ( age <= 1996 ) {
-      $("answer").text("hi millennial!");
-      $("#neil-form").show();
-      $("#age-form").hide();
-    } else {
-      $("#answer").text("nope. not a millennial");
-      $("#club-img").attr("src", "http://energy.gov/sites/prod/files/styles/borealis_default_hero_respondlarge/public/door_5481543.jpg?itok=joaNZ-Zx");
-    }
-    
-  });
+.container img {
+  width: 100%;
+}
 
-  $("#neil-submit").click(function(){
-    var neilAlbumsString = $("#neil-albums").val();
-    var neilAlbums = parseInt(neilAlbumsString);
+h1 {
+  margin-top: 20px;
+  font-family: 'Lobster';
+  font-size: 50px;
+  margin-bottom: 40px;
+}
 
-    if ( neilAlbums > 5 ) {
-      $("#neil-form").hide();
-      $("#answer").text("hello millennial!");
-      $("#club-img").attr("src", "https://media.giphy.com/media/zyxiqEQb6wTSg/giphy.gif");
-      
-    } else {
-      $("#answer").text("nope. not a millennial.");
-      $("#club-img").attr("src", "http://energy.gov/sites/prod/files/styles/borealis_default_hero_respondlarge/public/door_5481543.jpg?itok=joaNZ-Zx");
-    }
-  });
+input {
+  height: 50px;
+  width: 200px;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
 
-});
+.form {
+  margin-bottom: 40px;
+}
 
+.answer-text {
+  font-size: 80px;
+  color: cyan;
+  font-family: 'Lobster';
+}
 
+.hide {
+  display: none;
+}
 
+.age-submit {
+  color:#4499ED;
+}
+
+input {
+  background-color:white;
+  color: black;
+}
