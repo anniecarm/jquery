@@ -16,7 +16,6 @@ $(function() {
       $("#age-form").hide();
     } else {
       $("#answer").text("nope. not a millennial");
-      $("#club-img").attr("src", "http://energy.gov/sites/prod/files/styles/borealis_default_hero_respondlarge/public/door_5481543.jpg?itok=joaNZ-Zx");
     }
     
   });
@@ -28,11 +27,11 @@ $(function() {
     if ( neilAlbums > 5 ) {
       $("#neil-form").hide();
       $("#answer").text("hello millennial!");
-      $("#club-img").attr("src", "https://media.giphy.com/media/zyxiqEQb6wTSg/giphy.gif");
+    
       
     } else {
       $("#answer").text("nope. not a millennial.");
-      $("#club-img").attr("src", "http://energy.gov/sites/prod/files/styles/borealis_default_hero_respondlarge/public/door_5481543.jpg?itok=joaNZ-Zx");
+      
     }
   });
 
