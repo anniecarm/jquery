@@ -1,5 +1,5 @@
 body {
-  background-color: #4499ED;
+  background-color: #ffd1dc;
 }
 
 .container {
@@ -39,4 +39,13 @@ input {
 
 .hide {
   display: none;
+}
+
+.age-submit {
+  color:#4499ED;
+}
+
+::placeholder {
+  
+  color: grey;
 }
