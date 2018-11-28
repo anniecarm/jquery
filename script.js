@@ -20,22 +20,6 @@ $(function() {
     
   });
 
-  $("#neil-submit").click(function(){
-    var neilAlbumsString = $("#neil-albums").val();
-    var neilAlbums = parseInt(neilAlbumsString);
-
-    if ( neilAlbums > 5 ) {
-      $("#neil-form").hide();
-      $("#answer").text("hello millennial!");
-    
-      
-    } else {
-      $("#answer").text("nope. not a millennial.");
-      
-    }
-  });
-
-});
 
 
 
