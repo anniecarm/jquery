@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
   //All JS goes within these brackets  
   
   $("#age-submit").click(function(){
